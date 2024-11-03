@@ -74,16 +74,6 @@ main .show-data a {
 
 }
 
-main .show-data div {
-
-    width: 100%;
-
-    aspect-ratio: 1 / 1;
-
-    border-radius: 12.5px;
-
-}
-
 main .ip-input {
 
     background-color: #1d1d1d;

@@ -36,8 +36,6 @@ let v_longitude = document.querySelector(".longitude");
 
 let v_mapLink = document.querySelector(".maps-link");
 
-let v_map = document.querySelector(".location");
-
 ////////////////////////////
 
 let ipInput = document.querySelector(".ip-input");
@@ -100,11 +98,9 @@ getData.onclick = () => {
 
                 v_longitude.innerText = `Longitude : ${longitude}`;
 
-                v_mapLink.href = `https://www.google.com/maps/@?api=1&map_action=map&center=${latitude},${longitude}&zoom=15`;
+                v_mapLink.href = `https://www.google.com/maps/place/${latitude}, ${longitude}`;
 
                 v_mapLink.innerText = "Open Map";
-
-                v_map.innerHTML = `<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAp6VdnHruT2pImQtjSQJab1Me7Wa7fVUU&q=${latitude},${longitude}" width="100%" height="100%" allowfullscreen></iframe>`;
 
             });
 
@@ -146,11 +142,9 @@ getData.onclick = () => {
 
                 v_longitude.innerText = `Longitude : ${longitude}`;
 
-                v_mapLink.href = `https://www.google.com/maps/@?api=1&map_action=map&center=${latitude},${longitude}&zoom=15`;
+                v_mapLink.href = `https://www.google.com/maps/place/${latitude}, ${longitude}`;
 
                 v_mapLink.innerText = "Open Map";
-
-                v_map.innerHTML = `<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAp6VdnHruT2pImQtjSQJab1Me7Wa7fVUU&q=${latitude},${longitude}" width="100%" height="100%" allowfullscreen></iframe>`;
 
             });
 
